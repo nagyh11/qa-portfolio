@@ -1,0 +1,190 @@
+Enhance my QA Portfolio website with full backend functionality.
+
+
+==================================================
+FEATURE 1 — DOWNLOAD CV BUTTON
+==================================================
+
+Implement a fully working "Download CV" button.
+
+Requirements:
+- When clicking "Download CV", automatically download the CV file.
+- Use a PDF file named:
+Mohamed_Nagy_Hassan_CV.pdf
+
+Behavior:
+- File should download directly.
+- Should work on desktop and mobile.
+- Add loading state.
+- Add hover effect.
+
+Store the CV in:
+public/assets/cv/
+
+==================================================
+FEATURE 2 — HIRE ME BUTTON
+==================================================
+
+When clicking "Hire Me" button:
+- Smooth scroll to Contact Form section
+OR
+- Open contact modal (professional design)
+
+==================================================
+FEATURE 3 — CONTACT FORM FUNCTIONALITY
+==================================================
+
+Implement a fully working contact form.
+
+Fields:
+- Name
+- Email
+- Company
+- Subject
+- Message
+
+Validation:
+- Required fields validation
+- Email validation
+- Prevent empty submission
+- Show inline errors
+
+Button:
+"Send Message"
+
+When clicking Send Message:
+
+1. Save form data into database.
+
+Save:
+- Name
+- Email
+- Company
+- Subject
+- Message
+- Submission Date
+- Status
+
+Database Table:
+contact_messages
+
+Columns:
+id
+name
+email
+company
+subject
+message
+created_at
+status
+
+2. Send email notification to me.
+
+Send email to:
+eng.mohamednagyhassan@gmail.com
+
+Email Subject:
+New Portfolio Contact Message
+
+Email Body:
+
+New recruiter inquiry received
+
+Name: [name]
+Email: [email]
+Company: [company]
+Subject: [subject]
+Message: [message]
+
+Date: [submission date]
+
+3. Send confirmation email to recruiter.
+
+Subject:
+Thanks for contacting Mohamed Nagy Hassan
+
+Message:
+"Thank you for reaching out. I have received your message successfully and will get back to you soon."
+
+==================================================
+FEATURE 4 — ADMIN DASHBOARD
+==================================================
+
+Create a protected admin dashboard page.
+
+Route:
+/admin
+
+Requirements:
+- Password protected
+- View all recruiter messages
+- Search messages
+- Filter by date
+- Mark as read/unread
+- Delete messages
+- Export to CSV
+
+Display:
+- Name
+- Email
+- Company
+- Subject
+- Date
+- Status
+
+Modern dark UI matching portfolio design.
+
+==================================================
+FEATURE 5 — SUCCESS STATES
+==================================================
+
+After successful submission:
+
+Show success toast:
+"Message sent successfully!"
+
+Clear form automatically.
+
+If failed:
+Show error message.
+
+==================================================
+FEATURE 6 — SECURITY
+==================================================
+
+Add:
+- Rate limiting
+- Spam protection
+- Input sanitization
+- Secure API routes
+- Environment variables
+- Form validation
+
+==================================================
+FEATURE 7 — DEPLOYMENT READY
+==================================================
+
+Make the app deployment-ready for:
+- Replit
+- Vercel
+- Railway
+- Render
+
+Include:
+- .env.example
+- Database migration
+- Setup instructions
+
+==================================================
+UI REQUIREMENTS
+==================================================
+
+Keep the same premium dark portfolio design:
+- Neon blue/purple glow
+- Glassmorphism
+- Smooth animations
+- Responsive design
+
+Do not break existing portfolio layout.
+
+Return clean production-ready code.
